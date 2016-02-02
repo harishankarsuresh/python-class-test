@@ -1,0 +1,17 @@
+class Bird:
+	def __asdf__(self,kind,call):	#constructor
+		self.call = call
+		self.kind = kind
+	def do_call(self):
+		print "a %s goes %s" % (self.kind, self.call)
+
+class Parrot(Bird):
+	def __init__(qwer):				#constructor
+		Bird.__asdf__(qwer,"Parrot", "Kah!")
+
+if __name__ == '__main__':
+	parrot = Parrot()
+	parrot.do_call()
+	asdf=1
+	assert(asdf != 1)
+	
